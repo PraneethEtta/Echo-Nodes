@@ -7,7 +7,7 @@ from fastapi.responses import JSONResponse,HTMLResponse
 graph_router = APIRouter()
 
 # Connect to Neo4j
-driver = GraphDatabase.driver("bolt://localhost:7687", auth=("neo4j", "Inf0rmati0n@321"))
+driver = GraphDatabase.driver("bolt://localhost:7687", auth=("neo4j", "password"))
 
 # Define colors for different node types
 NODE_COLORS = {
